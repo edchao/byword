@@ -44,6 +44,13 @@ class LibViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     
+    // ADD
+    
+    func onAdd(sender: UIBarButtonItem){
+        //
+    }
+    
+    
     // TABLE METHODS
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -64,7 +71,7 @@ class LibViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! LibTableViewCell
         cell.label_text.text = "12 Tiny Bios"
-        cell.label_title.text = "Ed Chao"
+        cell.label_title.text = "Johnny B Goode"
         cell.backgroundColor = UIColor.clearColor()
         cell.sizeToFit()
         cell.setNeedsUpdateConstraints()
